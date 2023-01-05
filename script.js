@@ -5,7 +5,7 @@
 // @run-at      document-idle
 // @version     1.0
 // @author      mystrdat
-// @description Removes comments from verbal (or anyone else) on CSFD.cz
+// @description Odstraní vybrané uživatele z recenzí a hodnocení na ČSFD.cz
 // @homepageURL https://github.com/mystrdat/csfd-no-verbal
 // @icon        https://www.google.com/s2/favicons?domain=csfd.cz
 // ==/UserScript==
