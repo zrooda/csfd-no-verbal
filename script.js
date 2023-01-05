@@ -2,7 +2,7 @@
 // @name        No Verbal on ČSFD.cz
 // @namespace   Violentmonkey Scripts
 // @match       https://*.csfd.cz/*
-// @run-at      document-idle
+// @run-at      document-end
 // @version     1.0
 // @author      mystrdat
 // @description Odstraní vybrané uživatele z recenzí a hodnocení na ČSFD.cz
