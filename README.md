@@ -12,4 +12,4 @@ V nastavení extensionu přidejte nový skript a zkopírujte do něj obsah [scri
 
 ## Konfigurace
 
-Na [řádku 14](https://github.com/mystrdat/csfd-no-verbal/blob/master/script.js#L14) upravte pole uživatelů jak chcete, např. `const users = ['verbal', 'LIVINGDEAD', 'POMO']`.
+Na [řádku 14](https://github.com/mystrdat/csfd-no-verbal/blob/master/script.js#L14) upravte pole uživatelů jak chcete, např. `const users = ['verbal', 'LIVINGDEAD', 'POMO']`...
