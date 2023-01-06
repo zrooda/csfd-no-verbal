@@ -3,7 +3,7 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://*.csfd.cz/*
 // @run-at      document-end
-// @version     1.0
+// @version     1.1
 // @author      mystrdat
 // @description Odstraní vybrané uživatele z recenzí a hodnocení na ČSFD.cz
 // @homepageURL https://github.com/mystrdat/csfd-no-verbal
@@ -16,10 +16,10 @@
   const ratings = document.querySelectorAll('.aside-movie-profile .user-list li');
   // Delete comments
   comments.forEach((comment) => {
-    users.includes(comment.querySelector('.user-title-name').childNodes[0].nodeValue) && comment.remove();
+    users.includes(comment.querySelector('.user-title-name')?.childNodes?.[0]?.nodeValue) && comment.remove();
   });
   // Delete ratings
   ratings.forEach((rating) => {
-    users.includes(rating.querySelector('a').childNodes[0].nodeValue) && rating.remove();
+    users.includes(rating.querySelector('a')?.childNodes?.[0]?.nodeValue) && rating.remove();
   });
 })();
