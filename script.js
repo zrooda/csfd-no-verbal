@@ -16,10 +16,10 @@
   const ratings = document.querySelectorAll('.aside-movie-profile .user-list li');
   // Delete comments
   comments.forEach((comment) => {
-    users.includes(comment.querySelector('.user-title-name')?.childNodes?.[0]?.nodeValue) && comment.remove();
+    users.includes(comment.querySelector('.user-title-name')?.textContent) && comment.remove();
   });
   // Delete ratings
   ratings.forEach((rating) => {
-    users.includes(rating.querySelector('a')?.childNodes?.[0]?.nodeValue) && rating.remove();
+    users.includes(rating.querySelector('a')?.textContent) && rating.remove();
   });
 })();
