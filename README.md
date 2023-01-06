@@ -11,7 +11,7 @@ Vyžaduje některý z userscript manažerů:
 Přidejte v nastavení extensionu nový skript jednou z následujících metod:
 
 a) Jako URL `https://raw.githubusercontent.com/mystrdat/csfd-no-verbal/master/script.js`  
-b) Manuálně zkopírujte obsah [script.js](./script.js)
+b) Manuálně zkopírujte obsah [script.js](./script.js)  
 c) z Greasy Fork - https://greasyfork.org/en/scripts/457765-no-verbal-on-%C4%8Dsfd-cz
 
 
