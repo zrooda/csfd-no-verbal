@@ -8,7 +8,11 @@ Vyžaduje některý z userscript manažerů:
 **Tampermonkey** - [Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)  
 **Greasemonkey** - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)
 
-V nastavení extensionu přidejte nový skript a zkopírujte do něj obsah [script.js](./script.js).
+Přidejte v nastavení extensionu nový skript jednou z následujících metod:
+
+a) Jako URL `https://raw.githubusercontent.com/mystrdat/csfd-no-verbal/master/script.js`  
+b) Manuálně zkopírujte obsah [script.js](./script.js)
+
 
 ## Konfigurace
 
