@@ -10,6 +10,8 @@
 // @icon        https://www.google.com/s2/favicons?domain=csfd.cz
 // ==/UserScript==
 
+/* jshint esversion: 11 */
+
 (function() {
   const users = ['verbal'];
   const comments = document.querySelectorAll('#snippet--comments > article');
