@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        No Verbal on ČSFD.cz
-// @namespace   mystrdat-scripts
+// @namespace   mystrdat-userscripts
 // @match       https://*.csfd.cz/*
 // @run-at      document-end
 // @grant       GM.getValue
