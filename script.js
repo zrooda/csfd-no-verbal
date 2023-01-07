@@ -4,7 +4,7 @@
 // @match       https://*.csfd.cz/*
 // @run-at      document-end
 // @grant       GM.getValue
-// @version     1.6
+// @version     1.6.1
 // @author      mystrdat
 // @description Odstraní vybrané uživatele z recenzí, hodnocení a diskuzí na ČSFD.cz
 // @homepageURL https://github.com/mystrdat/csfd-no-verbal
@@ -30,7 +30,7 @@
   };
 
   // Delete comments & discussions
-  removeEntry([...comments, ...discussions], ".user-title-name");
+  removeMatchedElement([...comments, ...discussions], ".user-title-name");
   // Delete ratings
-  removeEntry(ratings, "a");
+  removeMatchedElement(ratings, "a");
 })();
