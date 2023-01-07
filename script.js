@@ -2,7 +2,7 @@
 // @name        No Verbal on ČSFD.cz
 // @namespace   mystrdat-userscripts
 // @author      mystrdat
-// @version     2.0.1
+// @version     2.0.2
 // @match       https://*.csfd.cz/*
 // @run-at      document-end
 // @grant       GM.setValue
@@ -25,15 +25,14 @@
   const comments = document.querySelectorAll("#snippet--comments > article");
   const ratings = document.querySelectorAll(".aside-movie-profile .user-list li");
   const discussions = document.querySelectorAll("#topPost > .article-forum-item");
-
   const addBlockButton = () => {
     GM.addStyle(`.${className}{all:unset;width:18px;height:18px;margin-left:8px;background:var(--color-grey-dark);-webkit-mask-image:url("${icon}");mask-image:url("${icon}");cursor:pointer;}.${className}:hover{background:var(--color-red-text);}`);
     comments.forEach((comment) => {
       const user = comment.querySelector("a.user-title-name")?.textContent;
       const button = GM.addElement(comment.querySelector("h3.user-title"), "span", {
         role: "button",
-        title: `Blokovat uživatele ${user}`,
-        "aria-label": `Blokovat uživatele ${user}`,
+        title: `Odstranit uživatele ${user}`,
+        "aria-label": `Odstranit uživatele ${user}`,
         class: className
       });
       button.addEventListener("click", async () => {
@@ -42,15 +41,14 @@
       });
     });
   };
-
-  const removeMatchedElement = (elements, selector) => {
+  const removeBlockedUserEntry = (elements, selector) => {
     elements.forEach((element) => {
       const author = element.querySelector(selector)?.textContent;
       users.includes(author) && element.remove();
     })
   };
 
-  removeMatchedElement([...comments, ...discussions], ".user-title-name");
-  removeMatchedElement(ratings, "a");
+  removeBlockedUserEntry([...comments, ...discussions], ".user-title-name");
+  removeBlockedUserEntry(ratings, "a");
   addBlockButton();
 })();
