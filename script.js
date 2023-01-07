@@ -21,7 +21,7 @@
   const discussions = document.querySelectorAll("#topPost > .article-forum-item");
   const removeEntry = (elements, selector) => {
     elements.forEach((element) => {
-      if (users.includes(element.querySelector(selector)?.textContent) {
+      if (users.includes(element.querySelector(selector)?.textContent)) {
         console.info(`csfd-no-verbal - removing ${element}`);
         element.remove();
       }
