@@ -8,7 +8,7 @@
 // @description Odstraní vybrané uživatele z recenzí, hodnocení a diskuzí na ČSFD.cz
 // @homepageURL https://github.com/mystrdat/csfd-no-verbal
 // @icon        https://www.google.com/s2/favicons?domain=csfd.cz
-// @license MIT
+// @license     MIT
 // ==/UserScript==
 
 /* jshint esversion: 11 */
