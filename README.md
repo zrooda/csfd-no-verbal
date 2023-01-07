@@ -10,11 +10,12 @@ Vyžaduje některý z userscript manažerů:
 
 Přidejte v nastavení extensionu nový skript jednou z následujících metod:
 
-a) Jako URL `https://raw.githubusercontent.com/mystrdat/csfd-no-verbal/master/script.js`  
+a) Jako URL `https://raw.githubusercontent.com/mystrdat/csfd-no-verbal/master/script.js` (umožní aktualizace)  
 b) Manuálně zkopírujte obsah [script.js](./script.js)  
 c) z [Greasy Fork](https://greasyfork.org/en/scripts/457765-no-verbal-on-%C4%8Dsfd-cz)
 
 
-## Konfigurace
+## Konfigurace uživatelů
 
-Na [řádku 14](https://github.com/mystrdat/csfd-no-verbal/blob/master/script.js#L14) upravte pole uživatelů jak chcete, např. `const users = ['verbal', 'LIVINGDEAD', 'POMO']`...
+a) Vytvořte v JSON storage skriptu klíč `users` s hodnotou pole uživatelů, např. `users: ["verbal", "LIVINGDEAD", "POMO"]` (*doporučuji*)  
+b) Na [řádku 14](https://github.com/mystrdat/csfd-no-verbal/blob/master/script.js#L14) upravte druhý parametr funkce `GM.getValue`, např. `const users = await GM.getValue("users", ["verbal", "LIVINGDEAD", "POMO"]);` (přepíše se při aktualizaci)
