@@ -22,7 +22,7 @@
   const removeEntry = (elements, selector) => {
     elements.forEach((element) => {
       if (users.includes(element.querySelector(selector)?.textContent)) {
-        console.info(`csfd-no-verbal - removing ${element}`);
+        console.info("csfd-no-verbal - removing element", element);
         element.remove();
       }
     })
