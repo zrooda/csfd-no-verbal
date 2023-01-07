@@ -1,13 +1,14 @@
 // ==UserScript==
 // @name        No Verbal on ČSFD.cz
 // @namespace   mystrdat-userscripts
+// @author      mystrdat
+// @version     1.6.1
 // @match       https://*.csfd.cz/*
 // @run-at      document-end
 // @grant       GM.getValue
-// @version     1.6.1
-// @author      mystrdat
 // @description Odstraní vybrané uživatele z recenzí, hodnocení a diskuzí na ČSFD.cz
 // @homepageURL https://github.com/mystrdat/csfd-no-verbal
+// @updateURL   https://raw.githubusercontent.com/mystrdat/csfd-no-verbal/master/script.js
 // @icon        https://www.csfd.cz/favicon.ico
 // @license     MIT
 // ==/UserScript==
