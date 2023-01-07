@@ -5,7 +5,7 @@
 // @run-at      document-end
 // @version     1.2
 // @author      mystrdat
-// @description Odstraní vybrané uživatele z recenzí a hodnocení na ČSFD.cz
+// @description Odstraní vybrané uživatele z recenzí, hodnocení a diskuzí na ČSFD.cz
 // @homepageURL https://github.com/mystrdat/csfd-no-verbal
 // @icon        https://www.google.com/s2/favicons?domain=csfd.cz
 // @license MIT
