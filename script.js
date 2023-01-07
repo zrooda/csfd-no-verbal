@@ -4,7 +4,7 @@
 // @match       https://*.csfd.cz/*
 // @run-at      document-end
 // @grant       GM.getValue
-// @version     1.3
+// @version     1.5
 // @author      mystrdat
 // @description Odstraní vybrané uživatele z recenzí, hodnocení a diskuzí na ČSFD.cz
 // @homepageURL https://github.com/mystrdat/csfd-no-verbal
@@ -19,12 +19,17 @@
   const comments = document.querySelectorAll("#snippet--comments > article");
   const ratings = document.querySelectorAll(".aside-movie-profile .user-list li");
   const discussions = document.querySelectorAll("#topPost > .article-forum-item");
+  const removeEntry = (elements, selector) => {
+    elements.forEach((element) => {
+      if (users.includes(element.querySelector(selector)?.textContent) {
+        console.info(`csfd-no-verbal - removing ${element}`);
+        element.remove();
+      }
+    })
+  };
+  
   // Delete comments & discussions
-  [...comments, ...discussions].forEach((comment) => {
-    users.includes(comment.querySelector(".user-title-name")?.textContent) && comment.remove();
-  });
+  removeEntry([...comments, ...discussions], ".user-title-name");
   // Delete ratings
-  ratings.forEach((rating) => {
-    users.includes(rating.querySelector("a")?.textContent) && rating.remove();
-  });
+  removeEntry(ratings, "a");
 })();
