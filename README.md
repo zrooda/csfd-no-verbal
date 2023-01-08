@@ -1,5 +1,5 @@
 # csfd-no-verbal
-Odstraní vybrané uživatele z recenzí, hodnocení a diskuzí na ČSFD.cz (default: `verbal`)
+Odstraní verbala a/nebo jiné vybrané uživatele z recenzí, hodnocení a diskuzí na ČSFD.cz
 
 ## Instalace
 Nainstalujte do prohlížeče jeden z userscript manažerů:
