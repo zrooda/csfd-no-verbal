@@ -2,14 +2,14 @@
 // @name        No Verbal on ČSFD.cz
 // @namespace   mystrdat-userscripts
 // @author      mystrdat
-// @version     2.0.3
+// @version     2.0.4
 // @match       https://*.csfd.cz/*
 // @run-at      document-end
 // @grant       GM.setValue
 // @grant       GM.getValue
 // @grant       GM.addStyle
 // @grant       GM.addElement
-// @description Odstraní vybrané uživatele z recenzí, hodnocení a diskuzí na ČSFD.cz
+// @description Odstraní verbala a/nebo jiné vybrané uživatele z recenzí, hodnocení a diskuzí na ČSFD.cz
 // @homepageURL https://github.com/mystrdat/csfd-no-verbal
 // @updateURL   https://raw.githubusercontent.com/mystrdat/csfd-no-verbal/master/script.js
 // @icon        https://www.csfd.cz/favicon.ico
