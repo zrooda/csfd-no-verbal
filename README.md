@@ -12,7 +12,6 @@ Přidejte v jeho nastavení nový skript jednou z následujících metod:
 
 **A)** Jako URL `https://raw.githubusercontent.com/mystrdat/csfd-no-verbal/master/script.js` (👍🏻 - *umožní aktualizace*)  
 **B)** Manuálně zkopírujte obsah [script.js](./script.js)  
-**C)** z [Greasy Fork](https://greasyfork.org/en/scripts/457765-no-verbal-on-%C4%8Dsfd-cz)
 
 ## Přidání uživatelů do blocklistu
 Lze udělat několika způsoby:
